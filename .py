@@ -11,7 +11,7 @@ def print_board(board):
 
 print "Let's play Battleship!"
 print_board(board)
-
+# Determines a location for the battleship.
 def random_row(board):
     return randint(0, len(board) - 1)
 
@@ -20,9 +20,7 @@ def random_col(board):
 
 ship_row = random_row(board)
 ship_col = random_col(board)
-
-# Everything from here on should go in your for loop!
-# Be sure to indent four spaces!
+# Sets the user up with four guesses for the ship's location.
 for turn in range(4):
     guess_row = input("Guess Row:")
     guess_col = input("Guess Col:")
