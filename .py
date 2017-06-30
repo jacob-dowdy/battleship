@@ -3,7 +3,7 @@ from random import randint
 board = []
 
 for x in range(6):
-    board.append(["O"] * 5)
+    board.append(["O"] * 6)
 
 def print_board(board):
     for row in board:
